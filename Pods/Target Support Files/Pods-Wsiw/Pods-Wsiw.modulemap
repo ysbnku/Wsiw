@@ -1,0 +1,6 @@
+framework module Pods_Wsiw {
+  umbrella header "Pods-Wsiw-umbrella.h"
+
+  export *
+  module * { export * }
+}

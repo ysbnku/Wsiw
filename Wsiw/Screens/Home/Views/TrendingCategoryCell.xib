@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrendingCategoryCell" rowHeight="198" id="KGk-i7-Jjw" customClass="TrendingCategoryCell" customModule="Wsiw" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="479" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="BaU-py-zGJ">
+                        <rect key="frame" x="20" y="0.0" width="439" height="150"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="U14-c7-ski">
+                                <rect key="frame" x="0.0" y="5" width="211" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRa-Fy-0qS">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="61.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Fantasy">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="baseBackgroundColor" red="0.95686274770000002" green="0.7607843876" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="trendingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8eT-gC-W2C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-E5-goh">
+                                        <rect key="frame" x="0.0" y="78.5" width="211" height="61.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Action">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="baseBackgroundColor" red="0.50588238240000005" green="0.7254902124" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="trendingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tcK-3s-iTf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBU-f8-vTk">
+                                <rect key="frame" x="228" y="5" width="211" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJg-kW-ZI6">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="61.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Adventure">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="baseBackgroundColor" red="0.94509804249999996" green="0.60784316059999999" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="trendingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BmP-Wq-uOo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVt-To-bMK">
+                                        <rect key="frame" x="0.0" y="78.5" width="211" height="61.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sci-Fi">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="baseBackgroundColor" red="0.85490196939999996" green="0.2588235438" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="trendingButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qnm-2J-fS9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XBU-f8-vTk" secondAttribute="bottom" constant="5" id="3fc-TY-DjG"/>
+                            <constraint firstItem="U14-c7-ski" firstAttribute="top" secondItem="BaU-py-zGJ" secondAttribute="top" constant="5" id="C9o-C0-kg8"/>
+                            <constraint firstAttribute="bottom" secondItem="U14-c7-ski" secondAttribute="bottom" constant="5" id="TjK-tv-zpU"/>
+                            <constraint firstItem="U14-c7-ski" firstAttribute="leading" secondItem="BaU-py-zGJ" secondAttribute="leading" id="iwX-If-9f6"/>
+                            <constraint firstItem="XBU-f8-vTk" firstAttribute="top" secondItem="BaU-py-zGJ" secondAttribute="top" constant="5" id="lXE-KL-Rh5"/>
+                            <constraint firstAttribute="height" constant="150" id="uGl-l9-Erb"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="BaU-py-zGJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SR4-b7-kbs"/>
+                    <constraint firstItem="BaU-py-zGJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZRR-6G-Atu"/>
+                    <constraint firstAttribute="bottom" secondItem="BaU-py-zGJ" secondAttribute="bottom" id="hK0-3b-ouG"/>
+                    <constraint firstAttribute="trailing" secondItem="BaU-py-zGJ" secondAttribute="trailing" constant="20" id="tc9-wh-o38"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="trendingBtnLeftOne" destination="uRa-Fy-0qS" id="C5g-cc-uKF"/>
+                <outlet property="trendingBtnLeftTwo" destination="RCd-E5-goh" id="a6d-br-eiC"/>
+                <outlet property="trendingBtnRightOne" destination="bJg-kW-ZI6" id="ERb-zM-k61"/>
+                <outlet property="trendingBtnRightTwo" destination="SVt-To-bMK" id="wSf-8l-nrm"/>
+            </connections>
+            <point key="canvasLocation" x="84.782608695652186" y="114.84375"/>
+        </tableViewCell>
+    </objects>
+</document>
